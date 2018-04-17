@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.6",
@@ -21,6 +20,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "ajv": "^6.0.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.12.9",
     "redux-devtools": "^3.4.1"
   }
 }
