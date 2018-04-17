@@ -1,13 +1,10 @@
-// eslint-disable-next-line
-import { createStore, combineReducers } from 'redux';
-import DevTools from '../DevTools';
+import { createStore, applyMiddleware } from 'redux';
+import { createLogger } from 'redux-logger';
 import reducers from '../reducers/index';
 import { getCountries } from '../actions/actions-countries';
 
-const store = createStore(
-  reducers,
-  DevTools.instrument()
-);
+const logger = createLogger();
+const store = createStore(reducers, applyMiddleware(logger));
 
 store.dispatch(getCountries());
 
